@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gilroy';
+}
+*::selection{
+    color: white;
+    background: #000; 
+}
+
+html body{
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    background-color:#F7F7F7;
+}
+
+#nav{
+    /* height: 100px; */
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 16px 12px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+#navsvg{
+    /* background: red; */
+    height: 83px;
+    overflow: hidden;
+    padding:0px 11.5px;
+}
+#navsvg svg{
+    display: block;
+    
+}
+
+#nav #navpart1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+#link{
+    padding:10px 10px ;
+
+}
+#navpart1 #link a{
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    color: #333;
+    margin: 0 28px;
+    padding: 5px ;
+}
+#navpart1 #icon i{
+    font-size: 17px;
+    font-weight: 100;
+    margin: 0 28px;
+}
+#icon{
+padding:10px 12px;
+border-radius: 50px;
+background-color:#F7F7F7;
+}
+
+#cursor{
+    height: 130px;
+    width: 130px;
+    background-color:rgb(230, 189, 162);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+
+}
+   
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-right:1vw ;
+    padding-left :1vw ;
+    padding-top: 42vh;
+}
+
+#page1 h1{
+    text-align: center;
+    font-size: 16vw;
+    text-transform: uppercase;
+    font-family: futura;
+    line-height: 12vw;
+    letter-spacing: -8px;
+}
+#video-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 2vw;
+    position: relative;
+    padding: 0 1vw;
+    
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#video-container #play{
+    padding: 2.3vw 1.3vw;
+    background: black;
+    color: white;
+    font-size: 1.1vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+
+}
+#good1{
+    width: 100%;
+    height: auto;
+    /* background-color:red; */
+    padding-top: .3;
+    padding: 0 1vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 4px;
+
+}
+#good1 h3{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5;
+}
+#good2{
+    padding:1vh 1vw;
+}
+#good2 #line{
+    width: 96vw;
+    height: 1px;
+    background-color:#333;
+    
+
+}
+ #page2{
+ min-height: 100vh;
+width: 100%;
+position: relative;
+display: flex;
+align-items: center;
+padding: 2vw 2vw;
+justify-content:space-between ;
+
+ }
+
+ #page2 .ele{
+    height: 100%;
+    width: 32%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ #page2 .ele img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+#page2 .ele .box{
+
+height: 30px;
+width: 70%;
+border-radius: 50px;
+position: absolute;
+z-index: 9;
+background-color: bisque;
+
+
+}
+
+#page2 .ele .box:hover{
+    height:150px;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#head{
+height: 50vh;
+width: 100%;
+/* background-color:#345c31; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding-bottom: 25px;
+
+}
+
+#head h2 p{
+    height:40vh;
+    width: 80%;
+    /* background-color:red; */
+    font-size: 4.8vw;
+    font-family: futura;
+    position: relative;
+    text-transform: uppercase;
+    padding-left:  25px;
+    letter-spacing: -1px;
+    line-height:5vw;
+}
+#heading {
+    height:40vh;
+    width:88%;
+    /* background-color: crimson; */
+
+}
+#childheading p{
+ margin-bottom: 29px;
+ line-height: 1.8vw;
+ position: relative;
+}
+
+#childheading{
+    width: 63%;
+    /* background-color:greenyellow; */
+}
+
+#childheading p a{
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    color:#000;
+    border-bottom: 1px solid #333;
+    
+}
+#childheading p a:hover{
+    border-bottom: 1px solid crimson;
+}
+
+
+
+.child{
+    height: 55%;
+    width: 40%;
+    /* background-color:red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:8vw;
+}
+
+.child img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#line2good{
+    margin: 5vw 0;
+}
+
+#page4{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 2vw;
+
+}
+#part1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:25px;
+    padding: 0 1vw;
+    
+    /* background-color: black; */
+    
+}
+#leftpart{
+    width: 30%;
+    height: 100%;
+
+}
+#pera{
+    width: 80%;
+    height: 100%;
+    /* background-color:red; */
+}
+#pera h3{
+    text-transform: uppercase;
+    font-family: futura;
+    font-size:2.6vw;
+}
+#pera p{
+    line-height: 2.6vw;
+    margin-top: 3vw;
+
+}
+#pera a{
+    font-size: 1vw ;
+    text-align: center;
+    color:black;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
+
+
+
+
+#rightpart{
+    width: 67%;
+    height: 100%;
+    /* background-color:green; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#rightpart .image{
+    height: 100%;
+    width: 48%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rightpart .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------- */
+@media (max-width:600px) {
+
+
+    #nav{
+        /* height: 100px; */
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        padding:15px;
+    
+    }
+    #navsvg{
+        /* background: red; */
+        height: 66px;
+        overflow: hidden;
+
+    }
+    #navsvg svg{
+        display: block;
+        height: 66px;
+        width: 80px;
+        
+        
+    }
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px;
+    }
+    
+    #link{
+        padding:10px 10px ;
+        display:none;
+    
+    }
+    
+    #navpart1 #icon i{
+        font-size: 15px;
+        font-weight: 100;
+        margin: 0 20px;
+    }
+    #icon{
+    padding:7px 6px;
+    border-radius: 50px;
+    background-color:#F7F7F7;
+    }
+    
+    #page1 h1{
+        font-size: 15vw;
+        line-height:9vw;
+        letter-spacing: -2px;
+    }
+    #page1{
+       min-height: 65vh;
+        width: 100%;
+        padding: 0 2vw;
+        padding-top: 25vh;
+        /* background: #000; */
+    }
+    #video-container{
+        height: 25vh;
+        margin-top: 3vw;        
+    }
+    
+    
+    #video-container #play{
+        padding: 4vw 3vw;
+        font-size: 3.4vw;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        scale: 0;
+    transform: translate(-50%,-50%);
+    }
+    
+    
+    #page2{
+        min-height: 100vh;
+       width: 100%;
+       position: relative;
+       display: flex;
+       align-items: center;
+       padding: 2.5vw 2.7vw;
+       flex-direction: column;
+       justify-content:space-between ;
+       
+        }
+       
+        #page2 .ele{
+           height: 70vh;
+           width: 100%;
+           /* background-color: #000; */
+           overflow: hidden;
+           margin-bottom: 2vw ;
+        }
+        
+
+        #page2 .ele .box{
+
+            height: 30px;
+            width: 65%;
+            border-radius: 50px;
+            position: absolute;
+            z-index: 9;
+            background-color: bisque;
+            
+            
+            }
+
+
+       #page3{
+            min-height: 90vh;
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+         #head{
+            height: 80vh;
+            width: 100%;
+            /* background-color:greenyellow;  */
+            display:block;
+            text-align: center;
+           } 
+        
+            #head h2 p{
+                height:24vh;
+                width: 100%;
+                font-size: 7.8vw;
+                letter-spacing: 1vw;
+                letter-spacing: -2px ;
+                line-height:10vw ;
+                padding-left: 0;
+                padding:0 10px;
+                margin-bottom: 28px;
+            }
+            #heading{
+                height:60%;
+                width: 100%;
+                /* background-color: crimson; */
+            }
+            #childheading{
+                height: 80%;
+                width: 100%;
+                padding: 0 15px;
+                /* background-color:greenyellow; */
+            }
+            #childheading p{
+                margin-bottom: 29px;
+                line-height: 5vw;
+               }
+            
+            #childheading p a{
+
+                /* background-color:red; */
+                margin-top: 5px;
+                font-size: 3vw;
+                font-weight: 400;
+                color:#000;
+                border-bottom: 1px solid #333;
+
+            }
+            #childheading .ppgap{
+                margin-bottom: 40px;
+            }
+
+        
+        .child{
+            margin-top: 12vw;
+            height: 55%;
+            width: 45%;
+            /* background-color:red; */
+        
+        
+        }
+        
+
+        #page4{
+            width: 100%;
+            min-height: 100vh;
+        
+        }
+        #part1{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction:column-reverse;
+            align-items: center;
+            justify-content: space-evenly;
+           
+            
+            /* background-color: black; */
+            
+        }
+       
+        #rightpart{
+            width: 100%;
+            height: 90%;
+            /* background-color:green; */
+        gap: 20px;
+           
+            
+        }
+        #rightpart .image{
+            height: 100%;
+            width: 50%;
+        }
+        
+        #leftpart{
+            width: 100%;
+            height: 100%;
+        
+        }
+        #pera{
+            width: 100%;
+            height: 100%;
+            /* background-color:red; */
+        }
+        #pera h3{
+    
+            font-size:5vw;
+        }
+        #pera p{
+            line-height: 5.5vw;
+            margin-top: 5.5vw;
+        
+        }
+        #pera a{
+            font-size: 2vw ;
+            opacity:2;
+        }
+        
+        
+}
